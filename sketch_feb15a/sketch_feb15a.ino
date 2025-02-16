@@ -1,10 +1,14 @@
+#define BUZZER_PIN 9  // Connect to PWM pin
+
 void setup() {
-  pinMode(7, OUTPUT);
+    pinMode(BUZZER_PIN, OUTPUT);
+    Serial.begin(9600); 
 }
 
 void loop() {
-  digitalWrite(7, HIGH);
-  delay(1000);
-  digitalWrite(7, LOW);
-  delay(1000);
+    tone(BUZZER_PIN, 440);  // Play a 1kHz tone
+    Serial.print("hello");
+    delay(500);              // Wait 500ms
+    noTone(BUZZER_PIN);      // Stop the tone
+    delay(500);              // Wait 500ms
 }
