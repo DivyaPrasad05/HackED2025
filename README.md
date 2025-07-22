@@ -1,4 +1,4 @@
-### Demo Video;
+### Demo Video:
 https://www.youtube.com/watch?v=Jasby95lXDI
 
 ### Inspiration
